@@ -16,17 +16,16 @@ body{
 
 #header{
     width: 100%;
-    height:100vh;
-    background-image:url(/Images/bg.png) ;
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;
+    height:80vh;
+    /* background-image:url(/Images/bg.png) ; */
 }
 
+/* .container{
+    padding: 10px 20%;   
+} */
 .container{
     padding: 10px 10%;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -34,6 +33,9 @@ nav{
     flex-wrap: wrap;
     position: fixed;
 
+}
+#img{
+    width:30%;
 }
 
 .logo{
@@ -55,7 +57,7 @@ nav ul li a{
 }
 nav ul{
     list-style: none;
-    /* background: rgba(0,0,0); */
+    background: rgba(0,0,0);
     overflow: hidden;
     color:#fff;
     padding: 0;
@@ -83,7 +85,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 30px;
     
 }
@@ -101,10 +103,13 @@ nav ul li a:hover::after{
 /* --------about----- */
 
 #about{
-    padding: 60px 0;
+    /* padding: 60px 0; */
     color: #ababab;
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
     font-size: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+   
 }
 
 .row{
@@ -113,7 +118,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 
 .about-col-1 img{
@@ -378,7 +383,7 @@ form input, form textarea{
     outline:none;
     background: #262626;
     padding:14px;
-    margin:8px 0;
+    margin:9px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
@@ -411,12 +416,13 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    #header{
-        background-image: url(/Images/background.png);
-    }
+@media only screen and (max-width: 800px){
+   #header{
+    width: 100%;
+    height:50vh;
+   }
     .header-text{
-        margin-top: 100%;
+        /* margin-top: 100%; */
         font-size: 16px;
     }
     .header-text h1{
@@ -436,6 +442,10 @@ nav .fa-solid{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        
+    }
+    #img{
+        width:50%;
     }
     nav ul li{
         display: block;
@@ -452,7 +462,7 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
     #about{
-        padding-top: 150px;
+        padding-top: 10px;
         color: #ababab;
         margin: 0px 50px;
     }
@@ -463,7 +473,7 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
     .about-col-1 img{
-        width:90%;
+        width:100%;
     }
     .about-col-2{
         font-size: 18px;
