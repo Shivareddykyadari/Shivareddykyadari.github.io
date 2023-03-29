@@ -1,343 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiva Reddy Kyadari</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/70fd30be1e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img id="img" src="./Images/name.png" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="/Images/Shiva_Kumar Reddy_Resume_09-03-2023-14-12-23.pdf" download  class="">Download CV</a></li>
-                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Tech Support Engineer</p>
-                <h1>Hi, I'm <span>Shiva</span><br>Reddy From Hyderabad</h1>
-            </div>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Shiva Reddys's Portfolio. Tech Support Engineer" />
 
+    <title>Shiva Reddy Kyadari</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <!-- fonts -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href=""
+      type="image/x-png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/70fd30be1e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body >
+                    <!-- navbar -->
+  <div id="page_wrapper">
+    <!-- Header Start  -->
+    <div class="header">
+      <ul class="navbar">
+        <li><a href="">Shiva Reddy Kyadari</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            onclick="window.open('https://drive.google.com/file/d/14ACOYDUVTr2TABXkN0rsmJDN_ZOrZc2V/view?usp=share_link')"
+            href="./Images/Shiva_Kumar Reddy_Resume_09-03-2023-14-12-23.pdf"
+            download="fp05_448_Shiva-Reddy-Resume"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Header end -->
+    <!-- resposive header start -->
+    <div class="hamburger">
+      <button class="ham"><i class="fa-solid fa-bars"></i></button>
+      <div class="vertical_navbar">
+        <button class="cross"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="links">
+          <li><a href="#home">Shiva Reddy kyadari</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              onclick="window.open('https://drive.google.com/file/d/14ACOYDUVTr2TABXkN0rsmJDN_ZOrZc2V/view?usp=share_link')"
+              href="./Images/Shiva_Kumar Reddy_Resume_09-03-2023-14-12-23.pdf"
+              download="fp05_448_Shiva_Reddy_Resume"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+                      <!-- resposive header end -->    
+
+
+    
+
+                      <!-- home section  -->
+
+    <section class="home" id="home">
+      <div id="particles-js"></div>
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm Shiva Reddy <span>Kyadari</span>
+        </h2>
+        <p id="tech">I am a Tech Support Engineer<span class="typing-text"></span></p>
+        
+    </section>
 
     <!-- .............about-section........ -->
 
+    <section class="about" id="about">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
 
-    <div id="about">
-        <div class="conatainer">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./Images/abt.png" alt="abt-logo">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I am a highly motivated tech support engineer with a strong technical background and experience in IT support, helpdesk management, and customer service. My skills include hardware and software troubleshooting, network setup and configuration, and system maintenance. I am a proactive problem solver with excellent communication skills and a commitment to delivering exceptional customer service.</p>
-                    <div class="tab-titles">
-                        <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
-                        <p class="tab-links" onclick="opentab('experience')">experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>05-04-2022  - 14-03-2022 </span><br>Content Engineer at Globallogic Technologies</li>
-                             <p> I used to work on Wikipedia for the content research as well used to work on crowdcompute for emoji research</p>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>1-04-2022  -  Present </span><br>Tech Support Engineer Programme at Masai School</li>
-                            <li><span>12-7-2017 - 01-01-2021</span><br>Bcom computers from Osmania University in Hyderabad</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="image">
+          <img
+            src="./Images/abt.png"
+            alt=""
+          />
         </div>
-    </div>
-
-
-<!-- ------------Skills------------ -->
-
-
-
-
-    <div id="skills">
-        <div class="container">
-            <h4 class="sub-title">Tech Skills</h4>
-            <div class="skills-list">
-                 <div>
-                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="">
-                </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="">
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="">
-                 </div>
-                 <div>
-                    <img src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" alt="">
-                 </div>
-            </div>
+        <div class="content">
+          <h3>I'm Shiva Reddy</h3>
+          <span class="tag">Tech Support Engineer</span>
+          <p>
+            - I am a highly motivated tech support engineer with a strong technical background and experience in IT support, helpdesk management, and customer service. My skills include hardware and software troubleshooting, network setup and configuration, and system maintenance. I am a proactive problem solver with excellent communication skills and a commitment to delivering exceptional customer service.
+        </p>
         </div>
-    </div>
+      </div>
+    </section>
 
+    <!-- ------------Skills------------ -->
 
-    <!-- --------------services---------- -->
-    
-
-
-    <div id="skills">
-        <div class="container">
-            <h6 class="sub-title">Customer Service Skills</h6>
-            <div class="services-list">
-                 <div>
-                    <h2>Troubleshooting</h2>
-                    <p>diagnose and identify the root cause of technical problems reported by customers.</p>
-                 </div>
-                 <div>
-                    <h2>Remote Assistance</h2>
-                    <p>providing remote assistance to customers by accessing their systems through remote desktop applications or other remote access tools</p>
-                 </div>
-                 <div>
-                    <h2>Installation and configuration</h2>
-                    <p>assist customers with the installation and configuration of hardware, software, and other digital products.</p>
-                 </div>
-                 <div>
-                    <h2>Maintenance and Repair</h2>
-                    <p>providing maintenance and repair services to customers to ensure that their devices and software are functioning optimally.</p>
-                 </div>
-                 <div>
-                    <h2>Upgrades and Updates</h2>
-                    <p>assisting customers with upgrading their devices or software to the latest versions and applying critical security patches and updates.</p>
-                 </div>
-                 <div>
-                    <h2>Technical consultation</h2>
-                    <p>providing technical consultation to customers on product features, performance, and best practices.</p>
-                 </div>
-                 <div>
-                    <h2>Documentation and training</h2>
-                    <p>creating and updating documentation and provide training to customers to help them use their digital products more effectively.</p>
-                 </div>
-                 <div>
-                    <h2>Customer support</h2>
-                    <p>providing timely and effective customer support to ensure customer satisfaction and loyalty.</p>
-                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- soft skills -->
+    <!-- Tech skills -->
 
     <section class="skill" id="skills">
-        
-        <h1>SOFT SKILLS</h1>
-        <div class="skill_set">
-          <div>
-            <img src="Images/communication.png" alt="" />
-            <p>Communication</p>
-          </div>
+      <h1>TECHNICAL SKILLS</h1>
 
-          <div>
-            <img src="./Images/interpersonal.png" alt="" />
-            <p>Active Listening</p>
-          </div>
-
-          <div>
-            <img src="./Images/Time Management.png" alt="" />
-            <p>Time Management</p>
-          </div>
-
-          <div>
-            <img src="./Images/teamwork.png" alt="" />
-            <p>TeamWork</p>
-          </div>
+      <div class="skill_set">
+        <div>
+          <img src="./Images/linux.png" alt="" />
+          <p>Linux</p>
         </div>
-      </section>
+        <div>
+          <img src="./Images/mysql.png" alt="" />
+          <p>SQL</p>
+        </div>
+        <div>
+          <img src="./Images/html-5.png" alt="" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="./Images/css-3.png" alt="" />
+          <p>CSS</p>
+        </div>
+
+        <div>
+          <img src="./Images/js.png" alt="" />
+          <p>JavaScript</p>
+        </div>
+
+        <div>
+          <img src="./Images/structure.png" alt="" />
+          <p>REACT JS</p>
+        </div>
+        <div>
+          <img src="./Images/operating-system.png" alt="" />
+          <p>operating-system</p>
+        </div>
+        <div>
+          <img src="./Images/script.png" alt="" />
+          <p>ShellScript</p>
+        </div>
+
+        <div>
+          <img src="./Images/troubleshooting.png" alt="" />
+          <p>TroubleShooting</p>
+        </div>
+
+        <div>
+          <img src="./Images/debug.png" alt="" />
+          <p>Debugging</p>
+        </div>
+      </div>
+      <!-- CUSTOMER SERVICE SKILLS -->
+      <h1>CUSTOMER SERVICE SKILLS</h1>
+      <div class="skill_set">
+        <div>
+          <img src="./Images/mindset.png " alt="" />
+          <p>Critical Thinking</p>
+        </div>
+
+        <div>
+          <img src="./Images/customer-service.png" alt="" />
+          <p>Customer Support</p>
+        </div>
+
+        <div>
+          <img src="./Images/loyalty.png" alt="" />
+          <p>Empathy</p>
+        </div>
+
+        <div>
+          <img src="./Images/megaphone.png" alt="" />
+          <p>Attentiveness</p>
+        </div>
+      </div>
+      <!-- SOFT SKILLS -->
+      <h1>SOFT SKILLS</h1>
+      <div class="skill_set">
+        <div>
+          <img src="Images/communication.png" alt="" />
+          <p>Communication</p>
+        </div>
+
+        <div>
+          <img src="./Images/interpersonal.png" alt="" />
+          <p>Active Listening</p>
+        </div>
+
+        <div>
+          <img src="./Images/Time Management.png" alt="" />
+          <p>Time Management</p>
+        </div>
+
+        <div>
+          <img src="./Images/teamwork.png" alt="" />
+          <p>TeamWork</p>
+        </div>
+      </div>
+    </section>
 
     <!-- ----------Portfolio-------- -->
 
-<!-- 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-             <div class="work-list">
-                 <div class="work">
-                    <img src="./Images/figma.png" alt="figma">
-                    <div class="layer">
-                        <h3>Figma</h3>
-                        <p>Figma is a collaborative UI, created for user onboarding</p>
-                        <a href="https://marvelous-gelato-4ea107.netlify.app/"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                        <h1>
-
-                        </h1>
-                    </div>
-                 </div>
-                 
-                 <div class="work">
-                    <img src="./Images/lifestyle.png" alt="lifestyle">
-                    <div class="layer">
-                        <h3>LifeStyle-store</h3>
-                        <p>Lifestyle-store is a ecommerce clone created by 4 members in a team</p>
-                        <a href="https://lifestyle-woad.vercel.app/"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                    <div>
-                        <a href="">Github</a>
-                    </div>
-                 </div>
-                 
-                
-             </div>
+    <section class="project_section" id="project">
+      <h1>PROJECTS</h1>
+      <div class="projects">
+        <div>
+          <img src="./Images/figma.png" alt="" />
+          <h3>Figma</h3>
+          <p>
+            Figma is a collaborative web application for User interface design.
+          </p>
+          <h3>Tech Stack</h3>
+          <div class="tech_stack">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Reveal JS</p>
+          </div>
+          <h3>Features</h3>
+          <p>Using framework of revealJS, used transition and design details</p>
+          <div class="project_links">
+            <a
+              href="https://marvelous-gelato-4ea107.netlify.app/"
+              target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/Shaurya611/Figma_TSE_Project"
+              target="_blank"
+              >Github</a
+            >
+          </div>
         </div>
-    </div>
 
-          -->
-
-          <section class="project_section" id="project">
-            <h1>PROJECTS</h1>
-            <div class="projects">
-              <div>
-                <img src="./Images/figma.png" alt="" />
-                <h3>Figma</h3>
-                <p>
-                    Figma is a
-                    collaborative web application for User
-                    interface design. 
-                </p>
-                <h3>Tech Stack</h3>
-                <div class="tech_stack">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>Reveal JS</p>
-                </div>
-                <h3>Features</h3>
-                <p>
-                  Using framework of revealJS, used transition and design details
-                </p>
-                <div class="project_links">
-                  <a
-                    href="https://marvelous-gelato-4ea107.netlify.app/"
-                    target="_blank"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/Shaurya611/Figma_TSE_Project"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
-    
-              <div>
-                <img src="./Images/lifestyle.png" alt="" />
-                <h3>Lifestyle</h3>
-                <p>
-                    Lifestyle is India's
-                    premier fashion destination for the latest
-                    trends and hottest styles.
-                </p>
-                <h3>Tech Stack</h3>
-                <div class="tech_stack">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>JavaScript</p>
-                  <p>React JS</p>
-                </div>
-                <h3>Features</h3>
-                <p>
-                  Using javascript built filter functionality and pricing
-                  functionality.
-                </p>
-                <div class="project_links">
-                  <a href="https://lifestyle-woad.vercel.app/" target="_blank">Demo</a>
-                  <a
-                    href="https://github.com/gouseimmu/LifeStyle-store-clone"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
-            </div>
-          </section>
-    
-           <!-- ----------------contact--------- -->
-
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 clss="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>shivareddykyadari1430@gmail.com</p>
-                    <p><i class="fa-duotone fa-phone-volume"></i>+91-9642755812</p>
-                    <div class="social-icons">
-                        <a href="http//facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/shiva-kumar-reddy-kyadari-9814a7213/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="http//instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="http//fa-whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/Shivareddykyadari"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="/Images/Shiva_Kumar Reddy_Resume_09-03-2023-14-12-23.pdf" download  class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form  onsubmit="sendEmail(); reset(); return false ">
-                        <input type="text" id="Name" placeholder="enter your name here" required>
-                        <input type="email"id="email" placeholder="enter your email" required>
-                        <textarea id="Messege"  rows="4" placeholder="Drop your message here"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
+        <div>
+          <img src="./Images/lifestyle.png" alt="" />
+          <h3>Lifestyle</h3>
+          <p>
+            Lifestyle is India's premier fashion destination for the latest
+            trends and hottest styles.
+          </p>
+          <h3>Tech Stack</h3>
+          <div class="tech_stack">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React JS</p>
+          </div>
+          <h3>Features</h3>
+          <p>
+            Using javascript built filter functionality and pricing
+            functionality.
+          </p>
+          <div class="project_links">
+            <a href="https://lifestyle-woad.vercel.app/" target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/gouseimmu/LifeStyle-store-clone"
+              target="_blank"
+              >Github</a
+            >
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright @Shiva Reddy Kyadari <i class="fa-solid fa-heart"></i> made using HTML CSS JavaScript</p>
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>    
+    <!-- ----------------contact--------- -->
+
+     <!-- conctact section start -->
+
+     <section class="contact_section" id="contact">
+      <h1>CONTACT ME</h1>
+      <div class="contact">
+        <div class="contact_links">
+          <div>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <a href="tel:+91 9642755812">Call me</a>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:kyadarishivareddy1430@gmil.com">Email me</a>
+          </div>
+
+          <div>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <a
+              href=""
+              target="__blank"
+              >Hyderabad, Telangana</a
+            >
+          </div>
+          <div>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+            <a
+              href="https://www.linkedin.com/in/shiva-kumar-reddy-kyadari-9814a7213/"
+              target="__blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div>
+            <span><i class="fa-brands fa-github"></i></span>
+            <a href="https://github.com/Shivareddykyadari" target="__blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div class="contact_form">
+          <form onsubmit="handleSubmit(); reset(); return false;">
+            <input type="text" id="name" placeholder="Name" />
+            <input type="email" id="mail" placeholder="Email" />
+            <textarea
+              id="subject"
+              cols="30"
+              rows="7"
+              placeholder="Subject"
+            ></textarea>
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+      </div>
+      <p>Designed & Build by Shiva Kumar Reddy Kyadari, 2023 All rights reserved</p>
+    </section>
+
+    <!-- conctact section end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <!-- <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
-                $("nav").addClass("black")
-            }else{
-                $("nav").removeClass("black")
-            }
-            
-        })
-    </script> -->
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </body>
+  <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
 </html>

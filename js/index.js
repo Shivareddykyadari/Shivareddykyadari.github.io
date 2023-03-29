@@ -1,37 +1,48 @@
-var tablinks=document.getElementsByClassName('tab-links')
-var tabcontents=document.getElementsByClassName('tab-contents')
+window.addEventListener("scroll", function(){
+    const header = document.querySelector(".header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-    }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab")
-}
+window.addEventListener("scroll", function(){
+    const header = document.querySelector(".navbar");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
-var sidemenu=document.getElementById("sidemenu");
-function openmenu(){
-    sidemenu.style.right="0"
-}
-function closemenu(){
-    sidemenu.style.right="-200px"
-}
+window.addEventListener("scroll", function(){
+    const header = document.querySelector(".hamburger");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+window.addEventListener("scroll", function(){
+    const header = document.querySelector(".vertical_navbar");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
-function sendEmail(){
+let hamburger = document.querySelector(".ham");
+hamburger.addEventListener("click", function(){
+    let navbar = document.querySelector(".vertical_navbar");
+    navbar.style.display = "block";
+})
+
+let cross = document.querySelector(".cross");
+cross.addEventListener("click", function(){
+    let navbar = document.querySelector(".vertical_navbar");
+    navbar.style.display = "none";
+})
+
+
+function handleSubmit(){
     Email.send({
-        Host : "smtp.gmail.com",
+        Host : "smtp.elasticemail.com",
         Username : "kyadarishivareddy1430@gmail.com",
-        Password : "8869FC2989A861D2EF5D2ED762CA6508076D",
+        Password : "",
         To : 'kyadarishivareddy1430@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "subject",
-        Body : "Name: " +document.getElementById("Name").value
-                
+        From : document.getElementById("mail").value,
+        Subject : document.getElementById("subject").value,
+        Body : "Name : " + document.getElementById("name").value
+                + "<br> Email : " + document.getElementById("mail").value
+                + "<br> Message is : " + document.getElementById("subject").value
     }).then(
-      message => alert("message sent successfully")
+      message => alert("Mail sent successfully!")
     );
+    
 }
-
