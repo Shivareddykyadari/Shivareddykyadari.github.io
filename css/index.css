@@ -264,6 +264,7 @@ html::-webkit-scrollbar-thumb {
 
 .about {
   background: rgb(7, 5, 5);
+  padding-top: 50px;
 }
 .about .row {
   display: flex;
